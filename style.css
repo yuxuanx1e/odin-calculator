@@ -1,3 +1,4 @@
+/* ================ GLOBAL ================ */
 :root {
     --background: #3d474d;
     --font: #222;
@@ -25,7 +26,6 @@
   }
   
 
-  
   html {
     /* footer support */
     position: relative;
@@ -42,7 +42,7 @@
   }
   
   
-  /* MAIN */
+  /* ================ MAIN ================ */
   .main {
     display: flex;
     align-items: center;
@@ -53,6 +53,7 @@
     margin-top: 50px;
   }
   
+  /* ================ CALCULATOR ================ */  
   .calculator {
     width: 500px;
     border: 2px var(--border) solid;
@@ -62,7 +63,9 @@
     box-shadow: 10px 10px;
   }
   
+  /* ================ SCREEN ================ */ 
   .screen {
+    /*height: 10vh;*/
     padding: 10px 20px;
     border: 2px var(--border) solid;
     border-radius: 5px;
@@ -74,15 +77,16 @@
   }
   
   .screen-last {
-    /* min-height: 32px;
-    font-size: 20px; */
+    min-height: 32px;
+    font-size: 20px; 
   }
   
   .screen-current {
-    /* min-height: 64px;
-    font-size: 40px; */
+    min-height: 64px;
+    font-size: 40px; 
   }
   
+  /* ================ BUTTONS ================ */ 
   .buttons-grid {
     padding: 20px;
     border: 2px var(--border) solid;
@@ -94,24 +98,16 @@
   }
 
   button {
-    /* border: none;
+    border: none;
     color: inherit;
     font-family: inherit;
     font-size: inherit;
     cursor: pointer;
-    outline: none; */
+    outline: none; 
   }
   
   .span-2 {
     grid-column: span 2;
-  }
-  
-  .btn {
-    /* padding: 20px;
-    border: 2px var(--border) solid;
-    border-radius: 5px;
-    font-size: 20px; 
-    box-shadow: 2px 2px; */
   }
   
   .btn-white {
@@ -120,18 +116,6 @@
   
   .btn-white:hover {
     background-color: var(--btn-white-hover);
-  }
-
-  .btn-grey:hover {
-    background-color: var(--btn-grey-hover);
-  }
-
-  .btn-grey {
-    background-color: var(--btn-grey);
-  }
-  
-  .btn-grey:hover {
-    background-color: var(--btn-grey-hover);
   }
 
   .btn-blue {
@@ -173,35 +157,14 @@
     margin-bottom: 10px;
     margin-left: 2px;
     margin-right: 2px;
-    
+    box-shadow: 0 0 0 1px #c4c2c2 inset, 0 0 0 2px rgba(255, 255, 255, 0.10) inset, 3px 3px 0 0 #9c9c9c, 0 8px 8px 1px rgba(0, 0, 0, .2);
   }
   
-  .btn3d:active,
-  .btn3d.active {
+  .btn3d:active {
     top: 2px;
   }
   
-  .btn3d.btn-white {
-    box-shadow: 0 0 0 1px #c4c2c2 inset, 0 0 0 2px rgba(255, 255, 255, 0.10) inset, 4px 4px 0 0 #9c9c9c, 0 8px 8px 1px rgba(0, 0, 0, .2);
-    background-color: #f9f9f9;
-  }
-  
-  .btn3d.btn-white:active,
-  .btn3d.btn-white.active {
-    box-shadow: 0 0 0 1px #c4c2c2 inset, 0 0 0 1px rgba(255, 255, 255, 0.15) inset, 0 1px 3px 1px rgba(0, 0, 0, .1);
-  }
-  
-  /* .btn3d.btn-primary {
-    box-shadow: 0 0 0 1px #417fbd inset, 0 0 0 2px rgba(255, 255, 255, 0.15) inset, 0 8px 0 0 #4D5BBE, 0 8px 8px 1px rgba(0, 0, 0, 0.5);
-    background-color: #4274D7;
-  }
-  
-  .btn3d.btn-primary:active,
-  .btn3d.btn-primary.active {
-    box-shadow: 0 0 0 1px #417fbd inset, 0 0 0 1px rgba(255, 255, 255, 0.15) inset, 0 1px 3px 1px rgba(0, 0, 0, 0.3);
-    background-color: #4274D7;
-  }
-   */
+
   
   /* Disables input spinners in calc screen */
   /* input[type='number']::-webkit-inner-spin-button,
@@ -210,7 +173,7 @@
     margin: 0;
   } */
   
-  /* FOOTER */
+  /* ================ FOOTER ================ */ 
   .footer {
     position: absolute;
     bottom: 0;
