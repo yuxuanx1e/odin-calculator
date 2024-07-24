@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="favicon.ico" />
+    <script
+      src="https://kit.fontawesome.com/4c536a6bd5.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js" defer></script>
+    <title>Calculator</title>
+  </head>
+
+  <body>
+    <main class="main">
+
+      <!-- Calculator-->
+      <div class="calculator">
+
+        <!-- Screen -->
+        <div class="screen">
+          <div class="screen-last" id="lastOperationScreen"></div>
+          <div class="screen-current" id="currentOperationScreen">0</div>
+        </div>
+
+        <!-- Button grid -->
+        <div class="buttons-grid">
+
+          <!-- Clear button -->
+          <button
+            class="btn3d btn-blue btn-default"
+            id="clearBtn">
+            CLEAR
+          </button>
+          
+          <!-- Delete button -->
+          <button
+            class="btn3d btn-red"
+            id="deleteBtn">
+            DELETE
+          </button>
+
+          <button class="btn3d btn-grey">%</button>
+          <button class="btn3d btn-grey">÷</button>
+
+          <!-- Numbers and operators -->
+
+          <button class="btn3d btn-white">7</button>
+          <button class="btn3d btn-white">8</button>
+          <button class="btn3d btn-white">9</button>
+          <button class="btn3d btn-grey">×</button>
+          
+
+          <button class="btn3d btn-white">4</button>
+          <button class="btn3d btn-white">5</button>
+          <button class="btn3d btn-white">6</button>
+          <button class="btn3d btn-grey">−</button>
+          
+
+          <button class="btn3d btn-white">1</button>
+          <button class="btn3d btn-white">2</button>
+          <button class="btn3d btn-white">3</button>
+          <button class="btn3d btn-grey">+</button>
+          
+
+          
+          <button class="btn3d btn-white span-2">0</button>
+          <button class="btn3d " id="pointBtn">.</button>
+          <button class="btn3d btn-orange" id="equalsBtn">=</button>
+          
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer-->
+    <footer class="footer">
+        <p>
+          Copyright ©
+          <script>
+            document.write(new Date().getFullYear())
+          </script>
+          yuxuanx1e
+        </p>
+        <a href="https://github.com/yuxuanx1e" target="_blank">
+          <i class="fab fa-github"></i>
+        </a>
+    </footer>
+  </body>
+</html>
