@@ -109,7 +109,7 @@ function handleKeboardInput(e){
 function convertOperator(keyboardOperator){
     if(keyboardOperator ==='/') return '÷'
     if(keyboardOperator ==='*') return '×'
-    if(keyboardOperator ==='-') return '-'
+    if(keyboardOperator ==='-') return '−'
     if(keyboardOperator ==='+') return '+'
 }
 
@@ -119,7 +119,7 @@ function operate(operator, a, b){
     switch(operator){
         case '+':
             return (a + b)
-        case '-':
+        case '−':
             return (a - b)
         case '×':
             return (a * b)
